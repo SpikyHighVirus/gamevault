@@ -1,0 +1,375 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title Bar */
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title-bar .logo {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+}
+
+.title-bar .logo span {
+  color: #ffffff;
+}
+
+.hamburger-menu {
+  font-size: 2rem;
+  color: #ffcc00;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  position: relative;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* Discover Section Header */
+.discover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar input:focus {
+  border-color: #ffcc00;
+}
+
+/* Game Grid Section */
+.game-grid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin: 20px auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.game-card {
+  width: 182.3px;
+  height: 255.21px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffc107;
+}
+
+.game-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Modal for Game Details */
+.game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.modal-content p {
+  margin: 5px 0;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffcc00;
+}
+
+.modal-content select {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.genres, .top10 {
+  margin-bottom: 30px;
+}
+
+.genres h2, .top10 h2 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+.genres ul, .top10 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.genres ul li, .top10 ul li {
+  padding: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.genres ul li:hover, .top10 ul li:hover {
+  color: #ffcc00;
+}
+
+.genres ul li.active {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.top10 ul li span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.page-btn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.page-btn.active {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.letter-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.letter-list .letter-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.letter-list .letter-button:hover {
+  background-color: #ffcc00;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-text a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .game-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

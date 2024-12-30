@@ -1,0 +1,49 @@
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.genres, .top10 {
+    margin-bottom: 30px;
+}
+
+.genres h2, .top10 h2 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.genres ul, .top10 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.genres ul li, .top10 ul li {
+    padding: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.genres ul li:hover, .top10 ul li:hover {
+    color: #ffcc00;
+}
+
+.genres ul li.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.top10 ul li span {
+    color: #ccc;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,59 @@
+.trending-games-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.trending-games {
+    display: flex;
+    overflow: hidden;
+    width: calc(100% - 100px); /* Adjust for arrow buttons */
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.trending-card {
+    flex: 0 0 200px;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trending-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.arrow {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    z-index: 10;
+}
+
+.arrow:hover {
+    background-color: #ffcc00;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}

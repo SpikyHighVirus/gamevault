@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #1a1a2e; /* Dark background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    color: #ffcc00; /* Vibrant yellow for gaming */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.navbar .social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .social-icons a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .social-icons a:hover {
+    color: #ffcc00;
+}

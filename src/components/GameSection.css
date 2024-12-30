@@ -1,0 +1,16 @@
+.game-section {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.game-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.game-section p {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,49 @@
+.library-menu {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.library-category {
+  margin-bottom: 30px;
+}
+
+.library-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+  color: #ffcc00;
+}
+
+.library-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.library-game-card {
+  width: 150px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.library-game-card:hover {
+  transform: scale(1.05);
+}
+
+.library-game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.library-game-card h4 {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #fff;
+}

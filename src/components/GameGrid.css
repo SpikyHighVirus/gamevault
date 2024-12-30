@@ -1,0 +1,33 @@
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 20px; /* Even spacing between cards */
+    padding: 10px; /* Ensure some padding around the grid */
+  }
+  
+  .game-card {
+    width: 182.3px; /* Keep the fixed size */
+    height: 255.21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffc107;
+  }
+  
+  .game-card p {
+    margin: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
