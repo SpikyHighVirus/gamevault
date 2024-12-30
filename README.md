@@ -17,4 +17,4 @@ GameVault is a web application designed to help you track your favorite games, d
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/gamevault.git
+   git clone https://github.com/SpikyHighVirus/gamevault.git
